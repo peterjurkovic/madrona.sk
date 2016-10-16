@@ -1,0 +1,4 @@
+﻿<div class="tooltip right">
+<strong>Interný sklad</strong>
+<p>Formulárové políčko <b>Interný sklad</b> sa používa v tedy, ak je internetový obchod prepojený s pokladňou ktorá podporuje skladový systém.</p>
+</div>

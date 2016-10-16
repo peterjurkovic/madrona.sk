@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+	<strong>DPH</strong>
+	<p>V tomto nastavení je možné zmeniť DPH. Nastavenie nemá v plyv na prijaté obejdnávky.</p>
+</div>

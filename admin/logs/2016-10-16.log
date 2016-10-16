@@ -1,0 +1,89 @@
+20:38:22.219 TRACE Database line 83: Executing: SELECT `session` FROM `user_session` WHERE `id_user`=? AND `time`>? AND `session`=? LIMIT 1 
+20:38:22.219 TRACE Database line 96: Array
+(
+    [0] => iis
+    [1] => 1
+    [2] => 1476639502
+    [3] => 1432eb359a80f4770928e87a5b3d5b7e
+)
+ 
+20:38:22.220 TRACE Database line 83: Executing: UPDATE `user_session` SET `time`=1476643102 WHERE `id_user`=? LIMIT 1 
+20:38:22.220 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 1
+)
+ 
+20:38:22.221 TRACE Database line 83: Executing: SELECT `session` FROM `user_session` WHERE `id_user`=? AND `time`>? AND `session`=? LIMIT 1 
+20:38:22.221 TRACE Database line 96: Array
+(
+    [0] => iis
+    [1] => 1
+    [2] => 1476639502
+    [3] => 1432eb359a80f4770928e87a5b3d5b7e
+)
+ 
+20:38:22.222 TRACE Database line 83: Executing: UPDATE `user_session` SET `time`=1476643102 WHERE `id_user`=? LIMIT 1 
+20:38:22.222 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 1
+)
+ 
+20:38:22.224 TRACE Database line 83: Executing: SELECT `session` FROM `user_session` WHERE `id_user`=? AND `time`>? AND `session`=? LIMIT 1 
+20:38:22.225 TRACE Database line 96: Array
+(
+    [0] => iis
+    [1] => 1
+    [2] => 1476639502
+    [3] => 1432eb359a80f4770928e87a5b3d5b7e
+)
+ 
+20:38:22.225 TRACE Database line 83: Executing: UPDATE `user_session` SET `time`=1476643102 WHERE `id_user`=? LIMIT 1 
+20:38:22.225 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 1
+)
+ 
+20:38:22.226 TRACE Database line 83: Executing: SELECT `id_article`, `sub_id`, `title_sk`, `active` FROM `article` WHERE `sub_id`=? ORDER BY `order` 
+20:38:22.226 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 0
+)
+ 
+20:38:22.228 TRACE Database line 83: Executing: SELECT `id_article`, `sub_id`, `title_sk` FROM `article` WHERE `id_article`=? LIMIT 1 
+20:38:22.228 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 14
+)
+ 
+20:38:22.229 TRACE Database line 83: Executing: SELECT `id_article`, `active`, `order`, `hits`, `create`, `title_sk` FROM `article` WHERE `sub_id`=? ORDER BY `order` LIMIT 0, 10 
+20:38:22.229 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 14
+)
+ 
+20:38:22.230 TRACE Database line 83: Executing: SELECT a.`id_article`, a.`type`,a.`active`, a.`avatar1`, a.`avatar2`, a.`avatar3`, a.`editor`, a.`edit`, a.`create`, a.`hits`, a.`title_sk`, a.`subtitle_sk`, a.`header_sk`, a.`content_sk`, u.`login`
+					FROM  `article` a
+					INNER JOIN `user` u
+					ON a.`id_user`=u.`id_user`
+					WHERE a.`id_article`=? 
+					LIMIT 1 
+20:38:22.230 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 14
+)
+ 
+20:38:22.231 TRACE Database line 83: Executing: SELECT `login` FROM `user` WHERE `id_user`=? LIMIT 1 
+20:38:22.231 TRACE Database line 96: Array
+(
+    [0] => i
+    [1] => 1
+)
+ 
+20:38:22.232 TRACE Database line 83: Executing: SELECT `id_article_type`, `name` FROM `article_type` 

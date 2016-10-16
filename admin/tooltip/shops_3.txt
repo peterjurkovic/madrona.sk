@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+	<strong>Text po dokončení objednávky</strong>
+	<p>V tomto nastavení je možné definovať obsah e-mailu, ktorý sa odošne, ak sa objednávke nastaví stav: <b>Dokončená</b></p>
+</div>

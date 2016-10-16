@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+<strong>Stránkovanie obchod</strong>
+<p>Maximálny počet položiek (produktov) zobrazených na jednej stránke v <b>internetovom obchode.</b></p>
+</div>

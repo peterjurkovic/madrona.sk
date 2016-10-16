@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+	<strong>Mena internetového obchodu</strong>
+	<p>V tomto nastavení je možné zmeniť menu internetového obchodu. Nastavenie nemá vplyv na prijaté obejdnávky.<br /><br /> V prípade ak chcete pracovať aj s kurzom meny, kontaktujte webmástra.</p>
+</div>

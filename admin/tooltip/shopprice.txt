@@ -1,0 +1,4 @@
+﻿<div class="tooltip right">
+	<strong>Cena tovaru</strong>
+	<p>Cena tovaru bez DPH.</p>
+</div>

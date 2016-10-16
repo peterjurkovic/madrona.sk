@@ -1,0 +1,6 @@
+﻿<div class="tooltip">
+<strong>Popis obchodu</strong>
+<p>Popis bude zobrazený v popisu úvodnej stránky internetového obchodu. Mal by byť jedinečný, pútavý. 
+<img src="./img/tt/2.jpg" alt="google" />
+Odporúčaná dĺžka je do 200 znakov.</p>
+</div>

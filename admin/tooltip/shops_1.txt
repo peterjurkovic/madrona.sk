@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+	<strong>Text po odoslaní objednávky</strong>
+	<p>V tomto nastavení je možné definovať obsah e-mailu, ktorý sa automaticky odošle po odoslaní objednávky (košíka) zákazníkom, resp. objednávka má stav: <b>Čaká na spracovanie</b></p>
+</div>

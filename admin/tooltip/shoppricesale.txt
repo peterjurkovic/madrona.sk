@@ -1,0 +1,8 @@
+﻿<div class="tooltip right">
+	<strong>Akciová cena tovaru</strong>
+	<p>
+		V prípade ak je akciová cena <b>väčšia ako nula</b> a 
+		<b>Status tovaru</b> je nastavený na <b>Akcia</b>, alebo <b>Výpredaj</b>, tak je
+		normálna cena tovaru ignorovaná a berie sa do úvahy <b>Akciová cena tovaru.</b>
+	</p>
+</div>

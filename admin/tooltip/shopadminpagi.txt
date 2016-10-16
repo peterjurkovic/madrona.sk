@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+<strong>Stránkovanie administrácia</strong>
+<p>Maximálny počet položiek (produktov, objednávok, výrobcov) zobrazených na jednej stránke v <b>administrácii</b></p>
+</div>

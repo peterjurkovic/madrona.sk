@@ -1,0 +1,21 @@
+ErrorDocument 404 http://www.madrona.sk/error/page.php?p=404
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^madrona\.sk$
+RewriteRule .* http://www.madrona.sk/$0 [R=301,NE]
+
+RewriteRule ^i\/(.*)$					/admin/page/img.php?q=$1 	[QSA,L]		
+RewriteRule ^/?$					/index.php?p=home&a=home	[QSA,L]	
+
+RewriteRule ^admin.* - [L]
+
+RewriteCond %{REQUEST_URI} !(^/ponuka.*$)
+RewriteRule ^([a-z0-9\-]+)?$			/index.php?p=$1&a=index 	[QSA,L]	
+
+RewriteCond %{REQUEST_URI} !(^/ponuka.*$)
+RewriteRule ^([a-z0-9\-]+)\/([0-9]+)\/(.*)?$	/index.php?p=$1&a=$2 		[QSA,L]	
+
+	
+
+		
+

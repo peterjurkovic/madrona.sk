@@ -1,0 +1,4 @@
+﻿<div class="tooltip">
+	<strong>Text po prijatí objednávky</strong>
+	<p>V tomto nastavení je možné definovať obsah e-mailu, ktorý sa odošle ak sa zmení stav obejdnávky na: <b>Prijatá</b></p>
+</div>
