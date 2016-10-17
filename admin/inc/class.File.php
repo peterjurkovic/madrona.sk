@@ -42,7 +42,7 @@ class File
 			throw new FileException(basename(__FILE__) , __LINE__ , 'Nepodarilo sa nahrať súbor: '.$this->file['name']);
 		 }
 		 if(!move_uploaded_file($this->file['tmp_name'], $url.$this->file['name'])){
-				throw new FileException(basename(__FILE__) , __LINE__ , 'Presunutie súboru zlyhalo: '.$this->file['name']);
+				throw new FileException(basename(__FILE__) , __LINE__ , 'Presunutie súboru zlyhalo['.$this->file['tmp_name'].'] : '.$url.$this->file['name']);
 			}
 		 chmod($url.$this->file['name'], 0775);
 	  return true;

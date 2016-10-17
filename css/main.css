@@ -102,6 +102,9 @@ header #logo {
     padding: 10px 20px 35px 20px;
 }
 
+.main img{
+    margin: 10px;
+}
 .main h1{
   font-size:2em;
   border-bottom: 1px solid #eee;
@@ -126,6 +129,17 @@ footer {
     top: -5px;
     left: 0;
 }
+.footer .glyphicon{
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+.footer p{
+    font-size: .9em;
+}
+
+.footer h3{
+    text-align: center;
+}
 .border-top.container{
     padding-left: 0;
 }
@@ -149,7 +163,7 @@ footer {
 }
 
 .category{
-    padding:5px 15px;
+  padding:5px 15px;
   border:1px solid #eee;
   background:#fafafa;
   margin-bottom:10px;  

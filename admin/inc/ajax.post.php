@@ -77,8 +77,8 @@ try{
 				try{
 					foreach ($_FILES as $key => $f){
 						if(strlen($_FILES[$key]['name']) > 4){
-							$file->upload("../../data/avatars/", $_FILES[$key], false, "images");
-							resizeImageFile("../../data/avatars/".$file->getFileName());
+							$file->upload($config['fileDir']."/data/avatars/", $_FILES[$key], false, "images");
+							resizeImageFile($config['fileDir']."/data/avatars/".$file->getFileName());
 							$data[$key] = $file->getFileName();
 							$cols[] =  '`'.$key.'`=? ';	
 							$sqlData[] = $file->getFileName();
@@ -112,7 +112,7 @@ try{
 					break;
 				}
 				$file = new File();
-				$url = $file->createDir('../../data/'.$_POST['dirName'].'/', $_POST['id']);
+				$url = $file->createDir($config['fileDir'].'/data/'.$_POST['dirName'].'/', $_POST['id']);
 				try{
 					foreach ($_FILES as $key => $f){
 						if(strlen($_FILES[$key]['name']) > 4){

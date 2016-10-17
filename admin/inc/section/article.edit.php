@@ -156,9 +156,9 @@
                             <div id="avatar1">
                                     <?php 
                                        if($data[0]['avatar1'] != "") { 
-                                       		 echo '<a href="../../data/avatars/'.$data[0]['avatar1'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
+                                       		 echo '<a href="/data/avatars/'.$data[0]['avatar1'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
                                					  '<a href="#id'.$aid.'" title="article#avatar1#'.$data[0]['avatar1'].'" class="del hidden"></a>'. 
-											 	  '<img src="./inc/img.php?url=../../data/avatars/'.$data[0]['avatar1'].'&amp;w=100&amp;h=100&amp;type=crop"  class="img" alt="" />';
+											 	  '<img src="./inc/img.php?url=/data/avatars/'.$data[0]['avatar1'].'&amp;w=100&amp;h=100&amp;type=crop"  class="img" alt="" />';
                                         }else{
 											echo '<img src="./img/noavatar.png" alt="Nie je nahratý obrazok." />';
 										}
@@ -173,9 +173,9 @@
                              <div id="avatar2">
                                     <?php 
                                         if($data[0]['avatar2'] != "") { 
-                                        	echo '<a href="../../data/avatars/'.$data[0]['avatar2'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
+                                        	echo '<a href="/data/avatars/'.$data[0]['avatar2'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
                                					  '<a href="#id'.$aid.'" title="article#avatar2#'.$data[0]['avatar2'].'" class="del hidden"></a>'. 
-											 	  '<img src="./inc/img.php?url=../../data/avatars/'.$data[0]['avatar2'].'&amp;w=100&amp;h=100&amp;type=crop" class="img" alt="" />';
+											 	  '<img src="./inc/img.php?url=/data/avatars/'.$data[0]['avatar2'].'&amp;w=100&amp;h=100&amp;type=crop" class="img" alt="" />';
                                         }else{
 											echo '<img src="./img/noavatar.png" alt="Nie je nahratý obrazok." />';
 										}
@@ -190,9 +190,9 @@
                              <div id="avatar3">
                                     <?php 
                                         if($data[0]['avatar3'] != "") { 
-                                        	echo '<a href="../../data/avatars/'.$data[0]['avatar3'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
+                                        	echo '<a href="/data/avatars/'.$data[0]['avatar3'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
                                					  '<a href="#id'.$aid.'" title="article#avatar3#'.$data[0]['avatar3'].'" class="del hidden"></a>'. 
-											 	  '<img src="./inc/img.php?url=../../data/avatars/'.$data[0]['avatar3'].'&amp;w=100&amp;h=100&amp;type=crop" class="img" alt="" />';
+											 	  '<img src="./inc/img.php?url=/data/avatars/'.$data[0]['avatar3'].'&amp;w=100&amp;h=100&amp;type=crop" class="img" alt="" />';
                                         }else{
 											echo '<img src="./img/noavatar.png" alt="Nie je nahratý obrazok." />';
 										}

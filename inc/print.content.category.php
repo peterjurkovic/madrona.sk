@@ -16,7 +16,7 @@
     
     ?>
      <div class="col-lg-12 category">
-          <h3><a href="<?php echo $link; ?>"><?php echo $arr[$i]["title_${lang}"]; ?> &raquo;</h3>
+          <h3><a href="<?php echo $link; ?>"><?php echo $arr[$i]["title_${lang}"]; ?> &raquo;</a></h3>
           <?php 
             if(strlen($arr[$i]["header_${lang}"]) > 0){
               echo '<p>'.$arr[$i]["header_${lang}"].'</p>';

@@ -16,6 +16,7 @@
 	
 	$config["article_langs"]	= "sk";
 	$config['root_dir'] = dirname(__FILE__) ;
+	$config['fileDir'] = dirname(dirname(__FILE__)) ;
 		
 	$config['shop_prefix'] = "ponuka";			
 	

@@ -145,7 +145,7 @@ $(function() {
 	} 
 		
 	//  DELETING GALLERY imgs -----------------------------------------------------------
-	$("#gallery").delegate("#gallery a.del", "click", function(e){
+	$("#gallery").on("click", "a.del", function(e){
 		var	o = $(this),
 			data = {
 			url : o.attr("title"),
@@ -198,7 +198,7 @@ $(function() {
 	$('#avatars').ajaxForm({ datatype: 'json', success: processJson ,beforeSubmit:  loader});
 	
 	//  DELETING AVATARs -----------------------------------------------------------
-	$("#avatars").delegate("#avatars a.del", "click", function(){
+	$("#avatars").on("click", "a.del", function(){
 		var	o = $(this),
 			data = {
 			id : o.attr("href").replace("#id", ""),
@@ -257,7 +257,7 @@ $(function() {
 					createClasses();
 			});
 		return false;
-	})
+	});
 	
 	// AUTOCOMPLETE -----------------------------------------------------------
 	$( "input[name=q]" ).autocomplete({

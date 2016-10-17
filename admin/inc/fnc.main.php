@@ -62,7 +62,7 @@ function getOptions( $conn, $table, $colum, $first = 0, $skip = NULL, $sid = -1)
 function printImages($array, $id, $baseDir){
 		$html = "";
 		foreach($array as $name){
-			$url = 		'../../data/'.$baseDir.'/'.$id.'/';
+			$url = 		'/data/'.$baseDir.'/'.$id.'/';
 			$html .= 	'<div class="ibox"><a href="'.$url.$name.'" title="Zobraziť obrázok" class="show hidden"></a>'.
 						'<a href="#aid'.$id.'" title="'.$url.$name.'" class="del hidden"></a>'. 
 						'<img class="img" src="./inc/img.php?url='.$url.$name.'&amp;w=100&amp;h=100&amp;type=crop" /></div>';
@@ -74,14 +74,15 @@ function printImages($array, $id, $baseDir){
 function gallery($config, $id, $baseDir = "gallery"){
 		$html = "";
 		$file 	= new File();
-		$array 	= $file->scanFolder($config["root_dir"]."/../data/".$baseDir."/".$id."/");
+		$array 	= $file->scanFolder($config["fileDir"]."/data/".$baseDir."/".$id."/");
 		$count 	= count($array);
+
 		if(!isset( $_GET['gs'])) {  $_GET['gs'] = 1; }
 		if($_GET['gs'] == 1) { $totaloffset = 0; } else { $totaloffset = ($_GET['gs'] * $config["galleryPagi"]) - $config["galleryPagi"]; } 
 	
 		if($count != 0){
 				
-				$html .= '<p>V galérii sa nachádza: <strong>'.$count.'</strong> fotografií.</p>';
+				$html .= '<p>Počet fofiek v galérii: <strong>'.$count.'</strong></p>';
 
 				if($count > $config["galleryPagi"]) {
 					 $nav = new Navigator($count, $_GET['gs'] , './index.php?'.preg_replace("/&gs=[0-9]/", "", $_SERVER['QUERY_STRING']) , $config["galleryPagi"]);

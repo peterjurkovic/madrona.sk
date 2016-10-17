@@ -249,23 +249,6 @@
 						if (imagetypes() & IMG_JPG) {  
 							imagejpeg($this->imageResized, $savePath, $imageQuality);  
 						}  
-						if (imagetypes() & IMG_JPG) {
-							/*
-							$wm = imagecreatefrompng(dirname(__FILE__)."/wm.png");
-							imagealphablending($this->imageResized, true);
-							//list($markwidth, $markheight, $type1, $attr1)=getimagesize(dirname(__FILE__)."/wm.png");
-							//imagecopymerge($this->imageResized, $wm, ($this->newWidth-$markwidth)>>1, ($this->newHeight-$markheight+70)>>1, 0, 0, $markwidth, $markheight, 80);
-							imagecopy($this->imageResized, 
-									$wm,
-									floor(($this->newWidth > $this->width ? $this->width : $this->newWidth)  / 2) - 120 , 
-									floor(($this->newHeight > $this->height ? $this->height : $this->newHeight) / 2)  - 30 , 
-									0, 
-									0, 
-									250, 
-									30);
-							*/	
-							imagejpeg($this->imageResized, $savePath, $imageQuality);
-						}
 						break; 
 
 					case '.gif':
@@ -299,6 +282,9 @@
 
 			## --------------------------------------------------------
 			private function finalizeImage($output = ""){
+				if (version_compare(phpversion(), '5.4.0', '>')){
+					$output = NULL;
+				}
 				switch($this->type){
 					  case IMAGETYPE_JPEG :
 							imagejpeg($this->imageResized, $output, 80);

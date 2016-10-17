@@ -299,9 +299,9 @@
 		
 		// AVATAR IMAGES  -------------------------------------		
 		case 11 :
-				 echo '<a href="./../data/avatars/'.$_GET['img'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
+				 echo '<a href="/data/avatars/'.$_GET['img'].'" title="Zobraziť obrázok" class="show hidden"></a>'.
                       '<a href="#aid'.$_GET['aid'].'" title="article-'.$_GET['eid'].'-'.$_GET['img'].'" class="del hidden"></a>'. 
-					  '<img src="./inc/img.php?url=../../data/avatars/'.$_GET['img'].'&amp;w=100&amp;h=100&amp;type=crop"  class="img" alt="" />';
+					  '<img src="./inc/img.php?url=/data/avatars/'.$_GET['img'].'&amp;w=100&amp;h=100&amp;type=crop"  class="img" alt="" />';
 				exit;
 		break;
 		
