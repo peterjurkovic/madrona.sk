@@ -1,0 +1,8 @@
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  getimagesize(/opt/lampp/htdocs/madrona.dev/admin/data/gallery/14/untitled.jpg): failed to open stream: No such file or directory in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 49
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  Division by zero in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 211
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  Division by zero in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 212
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 83
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 86
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 87
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 90
+[18-Oct-2016 23:09:44 Europe/Berlin] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /opt/lampp/htdocs/madrona.dev/admin/inc/class.Image.php on line 234

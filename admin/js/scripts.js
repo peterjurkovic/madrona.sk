@@ -111,7 +111,12 @@ $(function() {
 	$('.f').prettyFileInput();	
 		
 	// Clear input on click
-	$('.clickClear').click(function(){$(this).val('');return false;});
+	$('.clickClear').click(function(){
+		if($(this).val() === 'Názov stránky'){
+			$(this).val('');
+		}
+		return false;
+	});
 	
 	// GALLERY upload  -----------------------------------------------------------
 	function loader2(data, jqForm, options){

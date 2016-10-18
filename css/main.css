@@ -168,3 +168,73 @@ footer {
   background:#fafafa;
   margin-bottom:10px;  
 }
+
+#gallery {
+    margin-top:40px;
+  padding-top:20px;
+  border-top: 5px solid #eee;
+}
+#gallery a{
+    border-radius:10px;
+  border:3px solid #eee;
+  display:inline-block;
+  padding:0;
+  margin:5px;;
+}
+
+#gallery a:hover{
+  border:3px solid #ddd;
+  opacity:.9;
+}
+
+
+.contact-form{
+  border-radius: 6px !important;
+  background:#fafafa;
+  border:1px solid #eee;
+  margin-top: 20px;
+}
+
+.contact-form h3{
+  font-size:1.3em;
+  color: #376FCE;
+  text-align:center;
+  border-bottom:1px solid #eee;
+  padding-bottom:12px;
+}
+
+.contact-form button{
+  border-radius: 5px !important; 
+  margin: 0 5px 10px 0;
+  padding: 5px 10px;
+}
+
+.contact-form.l{margin-right: 2px;margin-left: -2px;}
+.contact-form.r{margin-left: 2px;margin-right: -2px;}
+
+.cinfo{
+    text-align:center;
+  margin-bottom:10px;
+  font-size:1.1em;
+}
+
+.contants h3{
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.contants span.margin{
+    font-size: .8em;
+    margin-right: 10px;
+}
+
+.person{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid #fafafa;
+}
+.person:hover{
+  background: #F5FCFF;
+};

@@ -19,8 +19,9 @@
   <h1><?php echo $article[0]["title_${lang}"]; ?></h1>
   <article>
 		<?php
-
-		    if($meta["type"] == 2){
+			if($meta["id_article"] == 18){
+		      include "print.content.contact.php";
+		    }else if($meta["type"] == 2){
 		      include "print.content.category.php";
 		    }else{
 		      echo $article[0]["content_${lang}"].pageGallery($meta["id_article"], $article[0]["title_${lang}"]);

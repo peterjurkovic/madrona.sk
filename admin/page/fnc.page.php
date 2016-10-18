@@ -230,7 +230,7 @@ function getLangText($lang){
 function printPageImages($array, $id, $size, $title = ""){
 			$html = "";
 			foreach($array as $name){
-				$html .='<a href="/data/gallery/'.$id.'/'.$name.'" class="thumb" >'.
+				$html .='<a data-lightbox="roadtrip" href="/data/gallery/'.$id.'/'.$name.'" class="thumb" >'.
 						'<img src="/i/'.$size.'-'.$size.'-crop/gallery/'.$id.'/'.$name.'" alt="'.$title.'" /></a>';
 			}
 			return $html;
