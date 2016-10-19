@@ -21,7 +21,7 @@
             </div>
         </div>
        <div class="col-lg-4">
-            <h3>O firme</h3>
+            <h3>Kontakt</h3>
             <div class="col-lg-3">
               <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
             </div>

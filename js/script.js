@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var $map = $('.map');
-    console.log($map.parent().width());
     $map.width($map.parent().width());
     $map.each(function(){
     	$(this).attr('src', $(this).attr('data-src'));
@@ -9,6 +8,30 @@ $(document).ready(function(){
     $('.decode-email').each(function(){
     	$div = $(this);
     	$div.text(Base64.decode($div.data('email')));
+    });
+
+    $(document).on('submit', 'form[name=contact-madrona]', function(){
+        var data = {
+            name : $.trim($('#name').val()),
+            email : $.trim($('#email').val()),
+            message : $.trim($('#message').val()),
+        };
+        if(!data.name.length || !data.email.length || !data.message.length){
+            return false;
+        }
+        $('button').hide(500);
+        $.post('./inc/send.emal.php', data, function(json){
+            json = typeof json === 'string' ? $.parseJSON(json) : json;
+            if(json.sent){
+                $('form').remove();
+                $('.alert-success').removeClass('hidden');
+            }else{
+                $('.alert-danger').removeClass('hidden');
+                $('.msg').text(json.error);
+                $('button').show(500);
+            }            
+        });
+        return false;
     });
 });
 

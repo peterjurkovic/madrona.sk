@@ -47,6 +47,20 @@ header #logo {
     padding-right: 40px;
     border-right: 1px solid #193f67;
 }
+
+@media (min-width: 750px) { 
+  .main-nav .navbar a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width: 991px) { 
+  .main-nav .navbar a {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+}
 .main-nav .navbar li:last-child a{
     border-right: 0;
 } 
@@ -237,4 +251,20 @@ footer {
 }
 .person:hover{
   background: #F5FCFF;
-};
+}
+
+.reference{
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  margin: 10px 30px;
+}
+.reference img{
+  border-bottom: 3px solid #eee;
+}
+
+.alert{
+  border-radius: 5px !important;
+  padding: 5px 10px;
+}

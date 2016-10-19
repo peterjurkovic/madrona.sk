@@ -19,7 +19,9 @@
   <h1><?php echo $article[0]["title_${lang}"]; ?></h1>
   <article>
 		<?php
-			if($meta["id_article"] == 18){
+			if($meta["id_article"] == 17){
+		      include "print.content.reference.php";
+		    }else if($meta["id_article"] == 18){
 		      include "print.content.contact.php";
 		    }else if($meta["type"] == 2){
 		      include "print.content.category.php";

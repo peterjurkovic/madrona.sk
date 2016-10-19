@@ -142,7 +142,7 @@ function getArticle($type = "basic", $id = null, $lang = "sk"){
 			}
 
 			$html .= '<li '.($renderSubnav ? 'class="dropdown"' : '').'><a href="'.linker($categ[$i]["id_article"], $categ[$i]["type"], $lang).'" '.($categ[$i]["id_article"] == $currentID ? ' class="active"' : '').'>'.$categ[$i]["title_${lang}"].'</a>';
-			if($renderSubnav){
+			if($renderSubnav && $categ[$i]['id_article'] != 17){
 				$html .= '<ul class="dropdown-menu">'.printMenu($categ[$i]["id_article"], $class."-child",  $currentID).'</ul>';
 			}
 			$html .= '</li>';		

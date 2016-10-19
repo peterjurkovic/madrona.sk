@@ -33,7 +33,7 @@
         <h3>
             <span class="glyphicon glyphicon-envelope"></span> 
             Kontaktujte nás</h3>
-        <form>
+        <form name="contact-madrona">
             <div class="form-group">
                 <label for="name">
                     Meno
@@ -53,9 +53,16 @@
                 <textarea name="message" id="message" class="form-control" rows="4" cols="10" required="required" placeholder="Správa"></textarea>
             </div>
             <div >
+                <div class="alert alert-danger hidden" role="alert">
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <span class="msg"></span>
+                </div>
                 <button type="submit" class="btn btn-primary pull-right">Odoslať</button>
             </div>
         </form>
+         <div class="alert alert-success hidden" role="alert">
+          <span class="glyphicon glyphicon-ok"></span> &nbsp; Správa bola úspešne odoslaná
+        </div>
     </div>
 </div>
 
