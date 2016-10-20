@@ -207,7 +207,7 @@ $(function() {
 		var	o = $(this),
 			data = {
 			id : o.attr("href").replace("#id", ""),
-			info : o.attr("title").split("#"),
+			info : o.data("info").split("#"),
 			act : 12
 		};
 		$.getJSON(get, data, function(json) {  

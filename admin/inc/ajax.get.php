@@ -309,7 +309,7 @@
 		case 12 :
 				if(count($_GET['info']) == 3){
 					$file = new File();
-					if( $file->deleteFile("../../data/avatars/".$_GET['info'][2])){
+					if( $file->deleteFile($config['fileDir']."/data/avatars/".$_GET['info'][2])){
 						$conn->delete("UPDATE `".$_GET['info'][0]."` SET `".$_GET['info'][1]."`=?, `edit`=".time().", `editor`=? WHERE `id_".$_GET['info'][0]."`=? LIMIT 1", array( "", (int)$_SESSION['id'], $_GET['id'] ));
 						$data = array( "err" => 0, "msg" => "Odstrácené" );
 					}
@@ -321,7 +321,7 @@
 		case 14 :
 				if(isset($_GET['url'])){
 					$file = new File();
-					if($file->deleteFile($_GET['url'])){
+					if($file->deleteFile($config['fileDir'].$_GET['url'])){
 						$data = array( "err" => 0, "msg" => "Fotka bola  úspešne odstránená.");
 						break;
 					}
